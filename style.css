@@ -1,0 +1,95 @@
+body{
+  background-image: url("./images/background.jpg");
+}
+* {
+    box-sizing: border-box;
+  }
+ 
+.column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  .left{
+    height: auto;
+  }
+  .raygun{
+    margin-left: 300px;
+  }
+  .middle {
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.container {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #FEF2BF;
+  }
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    
+  }
+  .pressed{
+    opacity: 0.5;
+  }
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+    background: red;
+  }
+  footer {
+    text-align: center;
+    color: #DBEDF3;
+    font-family: sans-serif;
+  }
+  @media screen and (max-width: 1600px) {
+    .left, .middle{
+      width: 100%;
+      margin: 0; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .right{
+        width: 0;
+    }
+    #level-title{
+        font-size: 20px;
+    }
+    img{
+        width: 75%;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .btn{
+        margin: 0;
+        width: 40%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    body{
+        background-position: center;
+    }
+    
+  }
